@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devil Fruit Encyclopedia</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    color:#ff4444;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:#1d1d1d;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    text-decoration:none;
+    color:white;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #ff4444;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.type{
+    background:#333;
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Devil Fruit Encyclopedia</h1>
+    <p>Click a fruit to learn more</p>
+</header>
+
+<div class="container">
+
+    <a class="card" href="fruits/gomu.html">
+        <img src="https://i.imgur.com/yXOvdOS.png">
+        <div class="card-content">
+            <h2>Gomu Gomu no Mi</h2>
+            <div class="type">Paramecia</div>
+        </div>
+    </a>
+
+    <a class="card" href="mera.html">
+        <img src="https://i.imgur.com/7rlxY8G.png">
+        <div class="card-content">
+            <h2>Mera Mera no Mi</h2>
+            <div class="type">Logia</div>
+        </div>
+    </a>
+
+    <a class="card" href="kaido.html">
+        <img src="https://i.imgur.com/k0M2F3A.png">
+        <div class="card-content">
+            <h2>Uo Uo no Mi</h2>
+            <div class="type">Mythical Zoan</div>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>
